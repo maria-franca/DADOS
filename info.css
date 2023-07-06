@@ -1,0 +1,29 @@
+body
+{
+    background-image: linear-gradient(url );
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%; /*largura*/
+    height: 100vh;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+.informacoes
+{
+    flex-direction: column;
+    display: flex;
+    height: 500px;
+    width: 270px;
+
+}
+.titulo
+{
+    font-family: 'Ysabeau SC', sans-serif;
+     
+}
+.sexo
+{
+    width: 150px;
+    height: 20px;
+}

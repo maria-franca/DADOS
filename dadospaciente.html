@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações iniciais</title>
+    <link href="../css/info.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Gabriela&family=Ysabeau+SC:wght@200;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="titulo">
+        <h2>Dados do Paciente</h2>
+    </div>
+    <div class="informacoes">
+        <form action="recebe.php" method="post">
+            
+            <input type="date">
+            <div class="sexo">
+                Sexo:<input type="checkbox" name="op1"> F <input type="checkbox" name="op2"> M
+                <br><br>
+                Nome do Hospital:
+                <input type="name" name="op3">
+                <br><br>
+                Nome:
+                <input type="name" name="op4">
+                <br><br>
+                Idade:<input type="number" id="idade" onkeyup="Verifica();"  name="op5">
+                <br>
+                    <input type="checkbox" name="op6"> A 
+                    <input type="checkbox" name="op7"> M 
+                    <input type="checkbox" name="op8"> RN
+                <br><br>
+                RG/CPF do Paciente:<input type="number" id="idade" onkeyup="Verifica();"name="op9">
+                <br><br>
+                Telefone:<input type="number"name="op10">
+                <br><br>
+                Acompanhante:
+                <input type="name"name="op11">
+                <br><br>
+                Idade do Acompanhante:<input type="number" id="idade" onkeyup="Verifica();"name="op12">
+                <br><br>
+                Local da Ocorrência:
+                <input type="name"name="op13">
+                <br><br>
+                <button type="submit">ENVIAR</button>
+            </form>
+            </div>
+            
+    </div>
+</body>
+
+<script>
+    function Verifica()
+    {
+        if(parseInt(idade.value)>100 || parseInt(idade.value)<0)
+        {
+            alert ("Idade Inválida")
+        }
+        
+    }
+</script>
+</html>
